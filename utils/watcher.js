@@ -17,7 +17,7 @@ const setWatcher = function(page) {
     let watchFun = watch[key].handler || watch[key]
     let deep = watch[key].deep  // 没有则为 undefined
 
-    this.observe(data, lastKey, watchFun, deep, page)
+    this.observe(nowData, lastKey, watchFun, deep, page)
   })
 }
 
